@@ -1,0 +1,179 @@
+
+
+p {
+    margin: 10px;
+    padding: 15px;
+    padding-left: 40px;
+}
+
+
+h1, h2 {
+    margin-top: 100px;
+    padding: 10px;
+    color: white;
+    text-shadow: 3px 3px 0px rgba(0,0,0) ;
+    text-align: center;
+}  
+
+h2{
+    margin-bottom: 25px;
+}
+h3 {
+    font-size: 2em;
+}
+
+
+.conteneur_index{
+    position: relative;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+} 
+
+
+
+.box1{                                                             /*Box mon inspiration*/
+    background: linear-gradient(90deg, #728292, #FFEBCD);
+    
+    position: relative;
+    top: 100px;
+    
+    
+    padding: 20px;
+    border-right:2px solid black ;
+    border-bottom: 2px solid black;
+    border-radius: 25px ;
+    box-shadow: 3px 3px 0px rgba(0,0,0,0.6);
+}
+
+.box2{             /*box photo profile*/
+    z-index: 2;
+    position: relative;
+    right: 100px;
+    top: 15px;
+
+
+} 
+
+
+.conteneur_index_2{
+    position: relative;
+    margin: 10px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    top: 50px;
+}
+
+.box3{                      /*Biographie*/
+    background: linear-gradient(90deg, #FFEBCD, #728292);
+    
+    position: relative;
+    top: 100px;
+    left: 850px;
+    width: 700px;
+    
+    
+    padding: 20px;
+    border-left:2px solid black ;
+    border-bottom: 2px solid black;
+    border-radius: 25px ;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.6);
+}
+
+h3{
+    margin-left: 15px;
+}
+
+.box4{        /*logo national geo*/
+    z-index: 2;
+    position: relative;
+    left: 60px;
+    top: 20px;
+
+}
+
+.photo1{                    
+    position: relative;
+    top: 100px;
+    right: 50px;
+}
+
+.photo2{
+    position:relative;
+    right: 870px;
+    top: 200px;
+}
+
+h4{
+    text-decoration:underline overline;
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 200px;
+    padding-top:50px;
+    color: white;
+    
+    
+}
+
+.back_stars{
+    background-image: url(images/animaux/fond_etoilé.png.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.grid_ocean{
+    display: grid;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    gap: 15px;
+}
+
+.grid_ocean img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 996px) {
+    .grid_ocean {
+      grid-template-columns: 1fr;
+      gap: 15px;
+      margin: 20px;
+    }
+    .bannière{
+        background-size: 200%;
+    }
+    
+    
+    
+    .photo1, .photo2, .box4 {
+        display: none;
+    }
+    h2{
+        display:none;
+    }
+    .conteneur_index{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap:15px;
+    }
+    
+    .box3{
+       justify-content: right;
+    }
+    .conteneur_index_2{
+        display: none;
+    }
+    
+    .box2{
+        position: relative;
+        margin-left: 50%;
+    }
+}
+
+  
+   

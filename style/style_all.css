@@ -1,0 +1,191 @@
+/*  
+COULEURS  
+#728292   
+#FFEBCD
+*/
+
+
+*{
+    margin: 0;
+}
+header{
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    
+    
+    
+}
+
+em{                         /*Nom en italic*/
+    display:block ;
+    text-transform: italic;
+    text-align: right;
+    font-size: 0.8em;
+    
+}
+
+
+a{ 
+    color: black;
+    display: block;
+    font-family: 'Rosarivo', cursive;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: black;
+    
+}
+
+.logo{
+    height: 80px;
+    padding: 3px;
+    position: relative;
+    right: 20px;
+    
+}
+
+
+
+
+.conteneur_nav{         /* Menu du haut*/
+    
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+
+    
+}
+
+.banniere {
+    background-image: url(images/paysages/montagne.jpeg);
+    background-size: 100% ;
+    background-repeat: no-repeat;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+
+
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+    padding: 15px;
+
+}
+h1, h2, h3 {
+    font-family: 'Young Serif', serif;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 0.6em;
+}
+    
+   
+
+
+footer{
+    padding: 30px;
+    background-color: white;
+    background: cover;
+   
+    
+}
+
+.conteneur_footer{     
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 100px 100px 100px;
+    grid-template-rows: 1fr 1fr;
+    gap:20px;
+    border-top: 1px solid black;
+    
+
+}
+.logo_reseaux{
+    height: 60px;
+}
+
+.lien:hover{
+    opacity: 0.5;
+}
+.f1{                                       /*Position lien insta*/
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row: 1;
+
+}
+.f2{                                        /*position lien facebook*/
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row: 1;
+
+}
+.f3{                                        /*position lien pinterest*/
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row: 1;
+
+}
+ 
+.f4{                                   /*position adresse*/
+    font-size: 1em;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+
+@media screen and (max-width: 810px){
+ 
+    .logo{
+        height: 3em;
+    }
+    .conteneur_nav{
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        margin:20px;
+        text-align: center;
+        gap: 5px;
+        
+    }
+    .conteneur_footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+
+    }
+    .banniere{
+        margin-top:30px;
+        background-size: 450%;
+    }
+
+    
+    
+
+
+    
+}
+
+
+

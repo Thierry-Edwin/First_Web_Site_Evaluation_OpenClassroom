@@ -1,0 +1,76 @@
+
+h1 {
+    color: white;
+    text-shadow: 3px 3px rgba(0,0,0,0.6);
+    background-image: url(images/paysages/montagne.jpeg) ;
+    background-size: 100% ;
+    background-repeat: no-repeat;
+    padding: 60px;
+    padding-top: 90px;
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 3em;
+    text-decoration: underline rgba(0,0,0,0.8);
+    
+    
+    text-align: center;
+    margin: 20px;
+    padding: 30px;
+    
+    
+}
+
+
+
+
+.grid_savane{
+    
+    display: grid;
+    margin-left: 100px;
+    margin-right: 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+    gap: 15px;
+  
+}
+
+.grid_artic{
+    
+    display: grid;
+    margin-left: 100px;
+    margin-right: 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+    gap: 15px;
+  
+}
+
+.grid_savane img,
+.grid_artic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+@media screen and (max-width: 996px) {
+    .grid_savane {
+      grid-template-columns: 1fr;
+      gap: 15px;
+      margin: 20px;
+    }
+  
+    .grid_artic {
+      grid-template-columns: 1fr;
+      gap: 15px;
+      margin: 20px;
+    }
+    h1{
+        margin-top: 20%;
+        background-size: 200%;
+    }
+
+  }
