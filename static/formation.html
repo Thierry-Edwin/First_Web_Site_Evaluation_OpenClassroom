@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Acceuil - Wild Picture</title>
+        <link href="style_all.css" rel="stylesheet">
+        <link href="style_formations.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rosarivo&family=Young+Serif&display=swap" rel="stylesheet"> 
+        
+    </head>
+
+    <body>
+        <header>
+            <nav class="conteneur_nav">
+                <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"  title="logo maison"></a>
+                <a href="formation.html">Formations</a>
+                <a href="portfolio.html">Portofolio</a>
+                <a href="boutique.html">Boutique</a>
+                <a href="index.html">Accueil</a>
+            </nav>
+        </header>
+        
+        <main>
+            <section class="banniere">
+                <h1>Découvrez mes<br> différentes formations</h1>
+                <h2>Prises de vues, compétences technique et matériels<br>
+                    Toutes les bases pour commencer ou se perféctionner en photographie !</h2>
+            </section>
+
+            <section class="grid_img">
+                
+                <div class="grid_formation">
+                    <p class="one">
+                        La formation que je vous proposes offre une immersion passionnante dans l'art de la photographie.<br>
+                        Sous ma tutelle chevronnés, les participants explorent les bases de la composition, de l'éclairage et de la capture d'instantanés saisissants.<br>
+                        Des ateliers pratiques et des critiques constructives permettent de développer un style personnel, tout en maîtrisant l'équipement.<br>
+                        Le post-traitement est également abordé, afin d'optimiser les images. <br>
+                        Cette formation propose une exploration des divers genres photographiques, de la nature au portrait en passant par l'architecture.<br>
+                        À l'issue de cette formation, les amateurs auront les compétences pour immortaliser des moments avec une touche professionnelle<br>
+                    </p>
+                    <img class="two" src="images/apareil_1.jpg" alt="appareil photo">
+                    <img class="three" src="images/animaux/photographe 1.jpg" alt="Photographe">
+                    <p class ="four">
+                        Dans cette formation immersive de photographe animalier, les participants explorent les subtilités de la capture de la faune dans son habitat naturel.<br>
+                        Des excursions en plein air mettent l'accent sur la patience et l'observation attentive, tandis que des ateliers spécialisés décortiquent les comportements animaliers pour des prises de vue authentiques.<br> 
+                        Les techniques de dissimulation et de camouflage sont enseignées pour favoriser des interactions discrètes avec la faune.<br>
+                        Enfin, des sessions de post-traitement adaptées à la photographie animalière assurent un rendu fidèle et artistique des images capturées.
+                    </p>
+                </div>
+            </section>
+
+            <section>
+            
+                <img class="position_png" src="images/animaux/ours.png.png" alt="ours, papillion">
+                <form method="get" action="" >
+                    <fieldset> 
+                        <legend>Vos coordonnées</legend>    
+
+                        <div class="form_coordonnees">
+                            <div class="form_column">
+                                <label for="prenom">Votre prénom</label>
+                                <input type="text" name="prenom" id="prenom"  required>
+                            </div>
+                            <div class="form_column">
+                                <label for="nom">Nom </label>
+                                <input type="text" name="nom" id="nom"required>
+                            </div>
+                            <div class="form_column">
+                                <label for="email">Email</label>
+                                <input type="e-mail" name="email" id="email"required>
+                            </div>
+                        </div>    
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Quel formation vous interresses?</legend>
+                        <input type="checkbox" name="prise_de_vue" id="vue">
+                        <label for="vue">Prises de vues</label><br>
+                        <input type="checkbox" name="techniques" id="techniques">
+                        <label for="techniques">Compétences Techniques</label><br>
+                        <input type="checkbox" name="materiel" id="materiel">
+                        <label for="materiel">Matériels</label><br>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Questions ou commentaires?</legend>
+                        <textarea name="questions" id="questions"required></textarea>
+                    </fieldset>
+
+                    <input type="submit" value="Envoyer" class="submit">
+                </form>
+            </div>
+            </section>
+        </main>
+
+
+        <footer class="conteneur_footer">
+
+            <div class="lien f1"><a href="https://www.instagram.com/"><img class="logo_reseaux" src="images/insta.png" alt="insta_logo"> </a></div>
+            <div class="lien f2"><a href="https://www.facebook.com/"><img class="logo_reseaux" src="images/fb.png" alt="fb_logo"> </a></div>
+            <div class="lien f3"><a href="https://www.pinterest.fr/"><img class="logo_reseaux" src="images/pinterest.png" alt="pinterest_logo"> </a></div>
+            <p class="f4">Robin Barn<br>
+                        Photographe Animalier et Nature<br>
+                        150 rue du bonheur, 35678 ImagineCity<br>
+                        <img src="images/call.png" height="20" alt="call">   06.07.08.09.10<br>
+                        <img src="images/mail.png.png" height="20" alt="mail">  Robin.barn@gmail.com
+            </p>
+            
+            
+
+
+        </footer>
+    </body>
+    
